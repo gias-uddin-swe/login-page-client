@@ -34,5 +34,11 @@ test1234
 
 7. React-Modal
 
+## Deploy
+
+Netlify
+
+Heroku
+
 
 
