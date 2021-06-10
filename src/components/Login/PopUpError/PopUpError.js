@@ -27,19 +27,24 @@ const PopUpError = ({ modalIsOpen, closeModal }) => {
   //   }
   return (
     <div>
-      {loggedInUser.showError ? (
-        ""
-      ) : (
-        <Modal
-          isOpen={modalIsOpen}
-          onRequestClose={closeModal}
-          style={customStyles}
-          contentLabel="Example Modal"
-        >
-          <h2>{loggedInUser.error}</h2>
-          <button onClick={closeModal}>close</button>
-        </Modal>
-      )}
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        style={customStyles}
+        contentLabel="Example Modal"
+      >
+        <h2 className="text-center" style={{ color: "red" }}>
+          {loggedInUser.error}
+        </h2>
+        <div className="text-center mt-4">
+          <button
+            className="text-center m-auto btn btn-danger"
+            onClick={closeModal}
+          >
+            close
+          </button>
+        </div>
+      </Modal>
     </div>
   );
 };

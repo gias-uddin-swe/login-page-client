@@ -51,11 +51,12 @@ const Login = () => {
       .then((res) => res.json())
       .then((result) => {
         if (result) {
-          console.log(result.message);
           handleOnClick();
         } else {
+          openModal();
           const userInfo = { ...loggedInUser };
           userInfo.error = "Email or Password is incorrect";
+          userInfo.modalOpen = true;
           setLoggedInUser(userInfo);
         }
       });
