@@ -1,0 +1,29 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.input-field {
+  width: 50%;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 1px solid gray;
+  padding: 10px;
+}
+.input-field:hover {
+  border: 1px solid cyan;
+}
+.input-field:focus {
+  outline: none;
+  border: 1px solid cyan;
+}
+.login-button {
+  width: 50%;
+  height: 50px;
+  border: none;
+  outline: none;
+  background-color: cyan;
+  font-weight: 500;
+  border-radius: 5px;
+}

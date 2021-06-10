@@ -1,0 +1,7 @@
+.admin-btn {
+  width: 200px;
+  height: 50px;
+}
+.admin-btn:focus {
+  background-color: red !important;
+}
