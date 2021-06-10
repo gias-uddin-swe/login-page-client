@@ -68,7 +68,6 @@ const Login = () => {
     <div>
       <div className="row d-flex justify-content-center align-items-center">
         <div className="col-md-6 col-lg-6 col-sm-12">
-          <p style={{ color: "red" }}>{loggedInUser.error}</p>
           <form onSubmit={handleSubmit(onSubmit)}>
             <input
               className="input-field"
